@@ -36,7 +36,7 @@ This was implemented on an AWS server that already had a base webpage. My task w
 Let's get into the terminal commands I used to implement this! I was working under the home directory of the user previously set up on the Ubuntu server. For this tutorial's sake, lets make the name of the user  Ubuntu. If there are any packages that I use that you don't have (i.e. git), just download them from apt.
 
 ##### Database Setup
-The first thing you should do is ensure MariaDB isn't installed on your system, as it isn't compatible with CTFd's syntax (they use JSON as a datatype, which isn't supported by the default MariaDB, version 10.1.40, provided in Ubuntu 18.04). MariaDB 10.4 was recommended to me by ColdHeat (creator of CTFd), but since that version isn't stable as of the time I'm writing this, I decided to use MySQL. If you've already installed MariaDB, here's what I referenced to purge it from the system, followed by the commands I used. 
+The first thing you should do is ensure MariaDB isn't installed on your system, as it isn't compatible with CTFd's syntax (CTFd uses JSON as a datatype, which isn't supported by the default MariaDB, version 10.1.40, provided in Ubuntu 18.04). MariaDB 10.4 was recommended to me by ColdHeat (creator of CTFd), but since that version isn't stable as of the time I'm writing this, I decided to use MySQL. If you've already installed MariaDB, here's what I referenced to purge it from the system, followed by the commands I used. 
 https://askubuntu.com/questions/806107/remove-mariadb-mysql-databases
 
 ```sh

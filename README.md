@@ -104,7 +104,7 @@ $ sudo nano default
 ```
 Now we're going to configure NGINX so that CTFd will be available on www.domain.com/ctf/. I changed the server name to our domain, and I inserted a new location block (underneath the existing location / {} block) within the default NGINX configuration file: 
 ```sh
-server_name domain.com www.domain.com
+server_name domain.com www.domain.com;
 
 location /ctf/ {
     include uwsgi_params;

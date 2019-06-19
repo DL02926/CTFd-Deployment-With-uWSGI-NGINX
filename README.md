@@ -174,7 +174,7 @@ You can also check your logs. I found the uwsgi logs that we created earlier pro
 > Note: if you already went through the setup using CTFd's SQLite, it may have created a database file for you in ~/CTFd/app/CTFd/CTFd. If you see errors to the extent of "database /ctfd already exists", simply navigate to said directory and sudo rm -r ctfd.db.
 
 ##### Conclusion & Reflection
-DISCLAIMER: I did not go into securing anything in this guide. I didn't walk through SSL certifications, firewall optimization, or anything of the sort. Using this guide alone will leave you with a potentially vulnerable system. The goal of this guide was to show how to get it to work in a test environment. Secure everything before gonig live!
+DISCLAIMER: I did not go into securing anything in this guide. I didn't walk through SSL certifications, firewall optimization, or anything of the sort. Using this guide alone will leave you with a potentially vulnerable system. The goal of this guide was to show how to get it to work in a test environment. Secure everything before going live!
 
 Also, I plan on updating this guide to include redis caching in the future. Keep an eye out!
 

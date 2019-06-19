@@ -70,7 +70,7 @@ $ sudo apt-get install systemd nginx
 $ sudo pip3 install virtualenv
 $ git clone https://github.com/source-nerd/Python-flask-with-uwsgi-and-nginx #We will be using the uwsgi.ini and production_flask.service files from this. We will also isntall anything from requirements.txt.
 $ cd 
-$ sudo mv Python-flask-with-uwsgi #Renamed for readability
+$ sudo mv Python-flask-with-uwsgi CTFd #Renamed for readability
 $ cd CTFd/app
 $ git clone https://github.com/CTFd/CTFd.git #This is the CTFd repository
 $ virtualenv -p python3 venv

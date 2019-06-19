@@ -46,6 +46,7 @@ $ sudo rm -rf /etc/mysql/
 #You can check to see if anything unwanted is still there using "locate mysql"
 ```
 After removing any databases from your server, we're going to install MySQL 5.7. I followed the following guide: https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/how-to-install-mysql-8-0-on-ubuntu-18-04-lts.html#Install_MySQL_57_on_Ubuntu_1804
+
 For some reason, when I chose mysql 8.0, it would still install mysql 5.7. I'm sure mysql 8.0 would work as well.
 Here's my terminal commands:
 

@@ -20,9 +20,13 @@ This guide assumes that you already have a working Ubuntu Server 18.04 set up wi
 ##### Guides followed + resources used 
 
 https://github.com/CTFd/CTFd/wiki
+
 https://docs.ctfd.io/en/latest/
+
 https://github.com/source-nerd/Python-flask-with-uwsgi-and-nginx 
+
 https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04
+
 https://gist.github.com/mplewis/6076082
 
 #### Additional Notes
@@ -178,4 +182,5 @@ If everything went well, you should be able to see your unique homepage at your 
 
 
 This guide was created by DL02926
+
 Last updated 6/21/2019

@@ -28,7 +28,7 @@ This was implemented on an AWS server that already had a base webpage. My task w
 Let's get into the terminal commands I used to implement this! I was working under the home directory of the user previously set up on the Ubuntu server. For this tutorial's sake, lets make the name of the user  Ubuntu. If there are any packages that I use that you don't have (i.e. git), just download them from apt.
 
 ##### Database Setup
-The first thing you should do is ensure MariaDB isn't installed on your system, as it isn't compatible with CTFd's syntax (they use JSON as a datatype, which isn't supported by the default MariaDB provided in Ubuntu 18.04). MariaDB 10.4 was recommended to me by ColdHeat, but since that version isn't stable, I decided to use MySQL. If you've already installed MariaDB, here's what I referenced to purge it from the system, followed by the commands I used. 
+The first thing you should do is ensure MariaDB isn't installed on your system, as it isn't compatible with CTFd's syntax (they use JSON as a datatype, which isn't supported by the default MariaDB, version 10.1.40, provided in Ubuntu 18.04). MariaDB 10.4 was recommended to me by ColdHeat (creator of CTFd), but since that version isn't stable as of the time I'm writing this, I decided to use MySQL. If you've already installed MariaDB, here's what I referenced to purge it from the system, followed by the commands I used. 
 https://askubuntu.com/questions/806107/remove-mariadb-mysql-databases
 
 ```sh
@@ -48,7 +48,7 @@ $ sudo apt-get update
 $ sudo apt-get -y install mysql-server
 ```
 
-Then I set a superuser in mysql so that CTFd would be using that, not root. You can view MySQL's syntax for this. https://dev.mysql.com/doc/refman/5.7/en/dynindex-statement.html. I only set the superuser to for localhost.
+Then I set a superuser in mysql so that CTFd would be using that, not root. You can view MySQL's syntax for this. https://dev.mysql.com/doc/refman/5.7/en/dynindex-statement.html. I only set the superuser for localhost.
 Now you should be ready to move on!
 
 #####  Installing and Configuring Everything
@@ -164,7 +164,11 @@ $ sudo systemctl status nginx
 You can also check your logs. I found the uwsgi logs that we created earlier provided the most useful troubleshooting information.
 > Note: if you already went through the setup using CTFd's SQLite, it may have created a database file for you in ~/CTFd/app/CTFd/CTFd. If you see errors to the extent of "database /ctfd already exists", simply navigate to said directory and sudo rm -r ctfd.db.
 
-##### Conclusion
+##### Conclusion & Reflection
+DISCLAIMER: I did not go into securing anything in this guide. I didn't walk through SSL certifications, firewall optimization, or anything of the sort. Using this guide alone will leave you with a potentially vulnerable system. The goal of this guide was to show how to get it to work in a test environment. Secure everything before gonig live!
+
+Also, I plan on updating this guide to include redis caching in the future. Keep an eye out!
+
 If everything went well, you should be able to see your unique homepage at your main domain, and see the CTFd page at www.domain.com/ctf! Happy hacking!
 
 

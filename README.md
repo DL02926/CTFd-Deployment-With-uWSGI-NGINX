@@ -5,7 +5,7 @@ CTFd is an open-source Capture The Flag scoring application that utilizes Python
 
 I didn't know much about any of the frameworks used, so I figured I'd create this guide for people in my position!
 
-> This guide assumes that you already have a working Ubuntu Server 18.04 set up with a superuser. 
+This guide assumes that you already have a working Ubuntu Server 18.04 set up with a superuser. 
 
 
 ##### Frameworks Used

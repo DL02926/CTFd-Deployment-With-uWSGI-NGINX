@@ -3,6 +3,8 @@
 
 CTFd is an open-source Capture The Flag scoring application that utilizes Python Flask. The purpose of this guide is to show how I implemented CTFd, so that my steps may be replicated. 
 
+I didn't know much about any of the frameworks used, so I figured I'd create this guide for people in my position!
+
 
 ##### Frameworks Used
   - CTFd v2.1.2 (https://github.com/CTFd/CTFd/)

@@ -176,8 +176,6 @@ You can also check your logs. I found the uwsgi logs that we created earlier pro
 ##### Conclusion & Reflection
 DISCLAIMER: I did not go into securing anything in this guide. I didn't walk through SSL certifications, firewall optimization, or anything of the sort. Using this guide alone will leave you with a potentially vulnerable system. The goal of this guide was to show how to get it to work in a test environment. Secure everything before going live!
 
-Also, I plan on updating this guide to include redis caching in the future. Keep an eye out!
-
 If everything went well, you should be able to see your unique homepage at your main domain, and see the CTFd page at www.domain.com/ctf! Happy hacking!
 
 
